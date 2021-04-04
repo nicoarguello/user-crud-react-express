@@ -37,7 +37,7 @@ const SidebarContainer = (props) => {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/createUser" className="nav-link">
+                            <NavLink to="/createUser" className="nav-link" activeClassName="active">
                                 <i className="nav-icon fas fa-user-plus" />
                                 <p>
                                     Create new user
