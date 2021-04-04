@@ -1,7 +1,5 @@
 import Title from '../components/MainContent/Title'
 import Content from '../components/MainContent/Content'
-import CreateUser from "../components/MainContent/CreateUser"
-import { Route } from "react-router-dom"
 
 const MainContainer = (props) => {
 
@@ -13,7 +11,6 @@ const MainContainer = (props) => {
                         <div className="card">
                             <Title />
                             <Content />
-                            <Route path="/createUser" component={CreateUser} />
                         </div>
                     </div>
                 </div>
