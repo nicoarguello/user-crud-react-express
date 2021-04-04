@@ -3,9 +3,6 @@ import React from 'react'
 const CreateUser = (props) => {
     return (
         <>
-            <div className="card-header">
-                <h3 className="card-title"><strong>Create new user</strong></h3>
-            </div>
             <form>
                 <div className="card-body">
                     <div className="row">
