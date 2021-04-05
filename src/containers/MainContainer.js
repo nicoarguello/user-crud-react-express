@@ -1,5 +1,6 @@
-import Title from '../components/MainContent/Title'
-import Content from '../components/MainContent/Content'
+import Content from '../components/MainContent/Content';
+import {Route} from "react-router-dom"
+
 
 const MainContainer = (props) => {
 
@@ -8,10 +9,7 @@ const MainContainer = (props) => {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">
-                        <div className="card">
-                            <Title />
-                            <Content />
-                        </div>
+                        <Content/>
                     </div>
                 </div>
             </div>

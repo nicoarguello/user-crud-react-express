@@ -1,15 +1,16 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import Logo from './img/AdminLTELogo.png'
 
 
 const SidebarContainer = (props) => {
 
     return (
         <aside className="main-sidebar sidebar-dark-primary elevation-4">
-            <a href="index.html" className="brand-link">
-                <img src="./dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3"
+            <Link to='/' className="brand-link">
+                <img src={Logo} alt="AdminLTE Logo" className="brand-image img-circle elevation-3"
                     style={{ opacity: ".8" }} />
                 <span className="brand-text font-weight-light">Admin panel</span>
-            </a>
+            </Link>
 
             <div className="sidebar mt-3">
                 <div className="form-inline">
@@ -37,7 +38,7 @@ const SidebarContainer = (props) => {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/createUser" className="nav-link" activeClassName="active">
+                            <NavLink to="/user/create" className="nav-link" activeClassName="active">
                                 <i className="nav-icon fas fa-user-plus" />
                                 <p>
                                     Create new user
