@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node .back/bin/www",
+    "start": "DEBUG=back:* node ./back/bin/www",
     "dev": "DEBUG=back:* nodemon ./bin/www"
   },
   "dependencies": {
