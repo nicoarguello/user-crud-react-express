@@ -1,9 +1,20 @@
 import React from "react";
 
 import Title from '../../components/MainContent/Title';
+import Select from "react-select";
 
 
 const EditUser = () => {
+
+    const options = [
+        { value: 'Software Engineer', label: 'Software Engineer' },
+        { value: 'Full Stack Web Developer', label: 'Full Stack Web Developer' },
+        { value: 'Scrum Master', label: 'Scrum Master' },
+        { value: 'Project Manager', label: 'Project Manager' },
+        { value: 'Frontend Developer', label: 'Frontend Developer' },
+        { value: 'Backend Developer', label: 'Backend Developer' },
+        { value: 'DevOps Engineer', label: 'DevOps Engineer' }
+    ]
 
     return (
         <div className="card">
@@ -59,16 +70,13 @@ const EditUser = () => {
                         <div className="row">
                             <div className="form-group col-6">
                                 <label htmlFor="exampleSelectPosition">Minimal</label>
-                                <select id="exampleSelectPosition" className="form-control select2"
-                                        style={{width: "100%"}}>
-                                    <option selected="selected">Software Engineer</option>
-                                    <option>Full Stack Web Developer</option>
-                                    <option>Scrum Master</option>
-                                    <option>Project Manager</option>
-                                    <option>Frontend Developer</option>
-                                    <option>Backend Developer</option>
-                                    <option>DevOps Engineer</option>
-                                </select>
+                                <Select options={options}
+                                        defaultValue={options[0]}
+                                        isClearable={true}
+                                        isSearchable={true}
+                                        id='exampleSelectPosition'
+                                        name='position'
+                                />
                             </div>
                         </div>
                     </div>
